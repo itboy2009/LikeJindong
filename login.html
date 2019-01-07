@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>京东登录</title>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">
+			<span class="icon icon-goback"  onclick="window.history.back(-1);"></span>
+			<span class="txt-header">京东登录</span> 
+		</div>
+		<section class="page">
+			<div class="wrap loginPage">
+				<div id="username_login" class="login-wrap login-wrap-active">
+					<div class="input-container">
+						<input id="username" class="acc-input username txt-input J_ping" type="text" placeholder="用户名/邮箱/已验证手机">
+					</div>
+					<div class="input-container">
+						<input id="password" type="password" class="acc-input password txt-input J_ping" placeholder="请输入密码">
+						<i class="icon icon-clear"></i>
+						<label class="label-checkbox J_ping">
+							<input id="onOff_pwd" type="checkbox">
+							<div class="checkbtn"></div>
+						</label>
+						<button class="J_ping findpwd">忘记密码</button>
+					</div>
+				</div>
+
+
+				<div class="notice">&nbsp;</div>
+				<a href="javascript:;" id="loginBtn" class="btn J_ping">登 录</a>
+				<a href="javascript:;" id="loginOneStep" class="btn btn-onestep J_ping" style="display:block;">一键登录</a>
+				<input type="hidden" id="oneStep_switch" value="block">
+				<div class="quick-nav clearfix">
+					<a content-id="sms_login" href="javascript:;" class="J_ping planBLogin" style="display:block">
+						<span class="txt-planBLogin">短信验证码登录</span>
+					</a>
+					<a style="display:" href="javascript:;" class="J_ping quickReg" >
+						<span class="txt-quickReg">手机快速注册</span>
+					</a>
+				</div>
+				<div class="login-type">
+					<div class="quick-login" style="display:">
+						<h4 class="txt-otherLogin">其他登录方式</h4>
+						<a href="javascript:;" class="J_ping quick-qq" >
+							<i class="icon icon-mlogin icon-qq"></i><br>
+							<span class="txt-qq">QQ</span>
+						</a>
+					</div>
+					<div class="agreement-tips">
+						<p>登录即代表您已同意<a href="javascript:;">京东隐私政策</a></p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</body>
+</html>

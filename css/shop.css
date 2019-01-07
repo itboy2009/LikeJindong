@@ -1,0 +1,483 @@
+body{
+	background: #f7f7f7;
+}
+.header {
+    height: .88rem;
+    line-height: .88rem;
+    background: #fff;
+    font-size: .34rem;
+    z-index: 999;
+	text-align: center;
+}
+.icon {
+    width: .48rem;
+    height: .48rem;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.icon-goback {
+    top: .2rem;
+    left: .4rem;
+    background-image: url(../img/login/left.png);
+}
+.more{
+	z-index: 120;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0.8rem;
+	height: .88rem;
+}
+.more span{
+    display: inline-block;
+    margin: 0.24rem 0.24rem 0.24rem 0.20rem;
+    width: .4rem;
+    height: .4rem;
+    background: url(../img/fenlei/more.png) no-repeat 50%;
+    background-size: .4rem;
+
+}
+.more-list{
+    position: absolute;
+    top: 1.06rem;
+    right: 0.2rem;
+    z-index: 1000;
+    border-radius: 0.08rem;
+    width: 2.5rem;
+    background: rgba(0,0,0,.9);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+	display: none;
+}
+.more-list::before {
+    position: absolute;
+    top: -0.1rem;
+    right: 0.1rem;
+    width: 0.21rem;
+    height: 0.1rem;
+    background: url(../img/fenlei/jiantou.png) no-repeat 50%;
+    background-size: 100% 100%;
+    content: "";
+}
+.more-list li {
+    display: block;
+    position: relative;
+    border-bottom: 0.02rem solid hsla(0,0%,100%,.2);
+    height: 0.8rem;
+    line-height: 0.8rem;
+    z-index: 1000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+	font-size: 0.28rem;
+	color: #fff;
+}
+.more-list li span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0.8rem;
+	height: 0.8rem;
+	display: inline-block;
+}
+.more-list li strong{
+	font-weight: 400;
+	margin-left: 0.8rem;
+}
+.home{
+	background: url(../img/fenlei/home.png) no-repeat center center;
+	background-size: 0.3rem;
+}
+.fenlei{
+	background: url(../img/fenlei/fenlei.png) no-repeat center center;
+	background-size: 0.3rem;
+}
+.shop{
+	background: url(../img/fenlei/shop.png) no-repeat center center;
+	background-size: 0.3rem;
+}
+.mine{
+	background: url(../img/fenlei/mine.png) no-repeat center center;
+	background-size: 0.3rem;
+}
+.foot{
+	background: url(../img/fenlei/foot.png) no-repeat center center;
+	background-size: 0.3rem;
+}
+.shopcart_empty_wrap {
+    padding: 30px 0 15px;
+    text-align: center;
+}
+.shopcart_empty_wrap .empty_icon {
+    width: 90px;
+    height: 90px;
+}
+.shopcart_empty_wrap .empty_txt {
+    font-size: 16px;
+    color: rgba(51,51,51,.66);
+    line-height: 24px;
+    margin: 11px 0;
+}
+.shopcart_empty_wrap .empty_txt {
+    font-size: 16px;
+    color: rgba(51,51,51,.66);
+    line-height: 24px;
+    margin: 11px 0;
+}
+.shopcart_empty_wrap .login_btn {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #e4393c;
+    color: #e4393c;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 4px;
+    margin: 0 auto 15px;
+}
+.empty_cart_coupon {
+    padding: 15px 10px;
+    background: #fff;
+}
+.empty_cart_coupon .mod_coupon_head {
+    display: flex;
+    justify-content: space-between;
+}
+.empty_cart_coupon .mod_coupon_title {
+    position: relative;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #333;
+    line-height: 30px;
+}
+.empty_cart_coupon .mod_coupon_title::before {
+	position: absolute;
+    content: "";
+    width: 12px;
+    height: 17px;
+    background: url(../img/shop/bfo.png) no-repeat;
+    background-size: 12px;
+    left: 0;
+    top: 5px;
+    transform: rotate(180deg);
+}
+.empty_cart_coupon .mod_coupon_title .dot {
+    position: relative;
+    padding: 0 10px 0 7px;
+}
+.empty_cart_coupon .mod_coupon_title .dot::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #333;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -2px;
+}
+.empty_cart_coupon .mod_coupon_title::after {
+	position: absolute;
+    content: "";
+    width: 12px;
+    height: 17px;
+    background: url(../img/shop/aft.png) no-repeat;
+    background-size: 12px;
+    top: 6px;
+    margin-left: 3px;
+}
+.empty_cart_coupon .mod_coupon_get {
+    flex-shrink: 0;
+    height: 30px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    background-image: linear-gradient(-90deg,#e93b3d,#ff9574);
+    box-shadow: 0 5px 10px 0 rgba(233,59,61,.2);
+    border-radius: 15px;
+    padding: 0 15px;
+}
+.empty_cart_coupon .mod_coupon_area {
+    height: 64px;
+    margin-top: 12px;
+}
+.empty_cart_coupon .mod_coupon {
+    width: 33.33%;
+    height: 64px;
+    float: left;
+    position: relative;
+    /* margin-right: 1px; */
+    overflow: hidden;
+}
+.empty_cart_coupon .mod_coupon_more {
+    padding-left: 10px;
+    line-height: 24px;
+    color: #fff;
+}
+.empty_cart_coupon .mod_coupon::before {
+	position: absolute;
+    content: "";
+    width: 3px;
+    height: 64px;
+    top: 0;
+    z-index: 3;
+    left: 0;
+    background: url(../img/shop/bian.png) no-repeat;
+    background-size: 3px 64px;
+}
+.empty_cart_coupon .mod_coupon_info {
+    height: 40px;
+    padding: 0 8px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    border-top: 1px solid #f7f7f7;
+}
+.empty_cart_coupon .mod_coupon_info .c_type {
+    position: absolute;
+    z-index: 0;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    top: -11px;
+    left: -4px;
+    color: #eee;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+}
+.empty_cart_coupon .mod_coupon_info .c_count {
+    position: relative;
+    line-height: 1;
+    flex-shrink: 0;
+	color: #6ed1d3;
+}
+.empty_cart_coupon .mod_coupon_info .c_count .yen {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    font-size: 12px;
+}
+.empty_cart_coupon .mod_coupon_info .c_count .num {
+    padding-left: 10px;
+    font-family: font_steelfish;
+    font-weight: 700;
+    font-size: 24px;
+    position: relative;
+    top: 14px;
+}
+.empty_cart_coupon .mod_coupon_info .c_desc {
+    position: relative;
+    padding-left: 3px;
+    line-height: 12px;
+    height: 12px;
+    margin-top: 23px;
+    font-size: 10px;
+    color: #999;
+}
+.empty_cart_coupon .mod_coupon.type_dong .mod_coupon_more {
+    background-image: linear-gradient(-179deg,#73d2d4 2%,#53c7ca 99%);
+}
+.empty_cart_coupon .mod_coupon::after {
+	position: absolute;
+    content: "";
+    width: 3px;
+    height: 64px;
+    top: 0;
+    z-index: 3;
+    right: 0;
+    background: url(../img/shop/bian1.png) no-repeat;
+    background-size: 3px 64px;
+}
+.empty_cart_coupon .mod_coupon.type_yun .mod_coupon_more {
+    background-image: linear-gradient(-180deg,#7da7ce,#5f92c2 98%);
+}
+.shopcart_mod_title {
+    position: relative;
+    margin: 15px 0;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+.shopcart_mod_title .shopcart_mod_title_text {
+    z-index: 2;
+    position: relative;
+    padding: 0 15px;
+    background-color: #f7f7f7;
+}
+.shopcart_mod_title .shopcart_mod_title_text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2px;
+    width: 4px;
+    height: 4px;
+    background-color: #ccc;
+    transform: rotate(45deg);
+}
+.shopcart_mod_title .shopcart_mod_title_text::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -2px;
+    width: 4px;
+    height: 4px;
+    background-color: #ccc;
+    transform: rotate(45deg);
+}
+.shopcart_mod_title::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    background-color: #ccc;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    top: 50%;
+}
+.seckill{
+	width: 100%;
+	height: 3.18rem;
+	background: #FFFFFF;
+}
+.seckill-header{
+	width: 100%;
+	height: 0.68rem;
+	line-height: 0.68rem;
+}
+.seckill-text{
+	display: block;
+	float: left;
+	color: #FF0000;
+	font-size: 0.33rem;
+	font-weight: bold;
+	margin: 0 0.15rem;
+}
+.time{
+	float: left;
+	color: #000000;
+	font-size: 0.24rem;
+	
+}
+.time strong{
+	font-size: 0.28rem;
+	float: left;
+}
+.time ul{
+	float: left;
+	margin-left: 0.1rem;
+}
+.time li{
+	float: left;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0.15rem 0.05rem;
+	border: 0.1px solid #CCCCCC;
+	width: auto;
+	height: auto;
+	padding: 0 0.05rem;
+	line-height: 0.4rem;
+}
+.time span{
+	float: left;
+}
+.more-seckill{
+	float: right;
+	color: #f00;
+	font-size: 0.28rem;
+	margin-right: 0.3rem;
+	
+}
+.seckill-commodity{
+	position: relative;
+	width: 100%;
+	height: 2.48rem;
+	overflow-y: hidden;
+	
+}
+.seckill-commodity ul{
+	width: 17.1684rem;
+	height: 2.4rem;
+	margin-left: 0.1rem;
+}
+.seckill-commodity ul li{
+	float: left;
+	display: inline-block;
+	vertical-align: top;
+	height: 2.4rem;
+	width: 1.7rem;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	
+}
+.seckill-commodity img{
+	width: 1.52rem;
+	height: 1.52rem;
+	vertical-align: top;
+	
+}
+.more-seckill i{
+	width: 0.22rem;
+	height: 0.22rem;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0.05rem;
+}
+.text-price{
+	width: 100%;
+	
+}
+.text-price span{
+	width: 100%;
+	display: inline-block;
+	font-size: 0.38rem;
+	color: #FF0000;
+	font-weight: 500;
+	
+}
+.text-price s{
+	font-size: 0.21rem;
+	color: #333;
+	
+}
+.see-more{
+    float: right;
+	display: block;
+    width: 45px;
+    height: 100%;
+    background-color: #f7f7f7;
+    
+}
+.see-more i{
+	display: block;
+	width: 12px;
+    height: 12px;
+    background-position: -107px -109px ;
+    margin: 0 4px 3px;
+    
+}
+.see-more span{
+    font-size: 12px;
+    color: #999;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    text-align: left;
+    letter-spacing: 2px;
+	margin-top: 18px;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>购物车</title>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/shop.css" />
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">
+			<span class="icon icon-goback" onclick="window.history.back(-1);"></span>
+			<span class="txt-header">购物车</span>
+			<div class="more">
+				<span></span>
+			</div>
+			<ul class="more-list clearfix">
+				<li onclick="window.location.href='index.html'">
+					<span class="home"></span>
+					<strong>首页</strong>
+				</li>
+				<li onclick="window.location.href='fenlei.html'">
+					<span class="fenlei"></span>
+					<strong>分类搜索</strong>
+				</li>
+				<li onclick="window.location.href='shop.html'">
+					<span class="shop"></span>
+					<strong>购物车</strong>
+				</li>
+				<li onclick="window.location.href='login.html'">
+					<span class="mine"></span>
+					<strong>我的京东</strong>
+				</li>
+				<li>
+					<span class="foot"></span>
+					<strong>浏览记录</strong>
+				</li>
+			</ul>
+			<script type="text/javascript">
+				$(".more").click(function() {
+					$(".more-list").toggle()
+				})
+			</script>
+		</div>
+		<div style="" id="nopinLogin">
+			<div class="shopcart_empty_wrap">
+				<img src="img/shop/shop.png" class="empty_icon">
+				<p class="empty_txt">登录后可同步购物车中商品</p>
+				<div class="login_btn">登录</div>
+			</div>
+			<div id="emptyCoupon">
+				<div class="empty_cart_coupon">
+					<div class="mod_coupon_head">
+						<div class="mod_coupon_title">
+							新用户福利
+							<i class="dot"></i>
+							专属优惠礼包</div>
+							<a href="javascript:;" class="mod_coupon_get">一键领取</a>
+						</div>
+						<div class="mod_coupon_area" >
+							<div class="mod_coupon type_dong">
+								<div class="mod_coupon_info">
+									<p class="c_type">东券</p>
+									<div class="c_count">
+										<span class="yen">¥</span>
+										<span class="num">12</span>
+									</div>
+									<div class="c_desc">全品类可用</div>
+								</div>
+							<div class="mod_coupon_more">满150可用</div>
+						</div>
+						<div class="mod_coupon type_yun">
+							<div class="mod_coupon_info">
+								<p class="c_type">运费</p>
+								<div class="c_count">
+									<span class="yen">¥</span>
+									<span class="num">8</span>
+								</div>
+								<div class="c_desc">运费券</div>
+							</div>
+							<div class="mod_coupon_more">满0可用</div>
+						</div>
+						<div class="mod_coupon type_dong">
+							<div class="mod_coupon_info">
+								<p class="c_type">东券</p>
+								<div class="c_count">
+									<span class="yen">¥</span>
+									<span class="num">8</span>
+								</div>
+								<div class="c_desc">全品类可用</div>
+							</div>
+							<div class="mod_coupon_more">满120可用</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="shopcart_mod_title">
+			<span class="shopcart_mod_title_text">京东秒杀</span>
+		</div>
+		<div class="seckill">
+					<div class="seckill-header">
+						<span class="seckill-text">
+							京东秒杀
+						</span>
+						<div class="time">
+							<strong>14:00点场</strong>
+							<ul>
+								<li>00</li><span>:</span>
+								<li>31</li><span>:</span>
+								<li>20</li>
+							</ul>
+						</div>
+						<span class="more-seckill">
+							更多秒杀
+							<i class=""><img src="img/arrow_rt.png" /></i>
+						</span>
+					</div>
+					<div class="seckill-commodity">
+						<ul>
+							<li>
+								<img src="img/5a2a6d2aN557c463d.jpg_q70.jpg.jpg" />
+								<div class="text-price">
+									<span>￥1216</span><br />
+									<s>￥3299</s>
+								</div>
+							</li>
+							<li>
+								<img src="img/5a2a6d2bNb152c875.jpg_q70.jpg.jpg" />
+								<div class="text-price">
+									<span>￥7.99</span><br />
+									<s>￥12</s>
+								</div>
+							</li>
+							<li>
+								<img src="img/5a5ebdffNf1a23b7b.jpg.jpg" />
+								<div class="text-price">
+									<span>￥299</span><br />
+									<s>￥599</s>
+								</div>
+							</li>
+							<li>
+								<img src="img/5a598564N2f2fec61.jpg_q70.jpg" />
+								<div class="text-price">
+									<span>￥59.9</span><br />
+									<s>￥233</s>
+								</div>
+							</li>
+							<li>
+								<img src="img/5b023aa7Nd0b68d07.jpg_q70.jpg" />
+								<div class="text-price">
+									<span>￥19.9</span><br />
+									<s>￥120</s>
+								</div>
+							</li>
+							<li>
+								<img src="img/5b063c38N5ad400c1.jpg_q70.jpg.jpg" />
+								<div class="text-price">
+									<span>￥159</span><br />
+									<s>￥189</s>
+								</div>
+							</li>
+							<li>
+								<img src="img/5b70dfc1Nb578034f.jpg_q70.jpg" />
+								<div class="text-price">
+									<span>￥99</span><br />
+									<s>￥299</s>
+								</div>
+							</li>
+							<li>
+								<img src="img/5b90f5bfNcd58f18b.png_q70.jpg.jpg" />
+								<div class="text-price">
+									<span>￥138</span><br />
+									<s>￥487</s>
+								</div>
+							</li>
+							<li>
+								<img src="img/5a2a6d2aN557c463d.jpg_q70.jpg.jpg" />
+								<div class="text-price">
+									<span>￥1216</span><br />
+									<s>￥3299</s>
+								</div>
+							</li>
+							<li>
+								<div class="see-more">
+									<i class="jd-sprites"></i>
+									<span>查看更多</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+		
+				</div>
+	</body>
+</html>

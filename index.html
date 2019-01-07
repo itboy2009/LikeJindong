@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>多快好省，购物上京东！</title>
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<header>
+			<div class="header">
+				<div class="logo" onclick="location.href='fenlei.html'">
+					<span></span>
+				</div>
+				<div class="search">
+					<input type="search" placeholder="哥伦比亚京东超级品牌日">
+					<span class="jd-sprites jd-sp1"></span>
+					<span class="jd-span-i">
+						<i class="jd-sprites jd-sp2"></i>
+					</span>
+				</div>
+				<div class="login">
+					登录
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(window).scroll(function(){
+				var top=$("html,body").scrollTop()
+				if(top>50){
+					$("header").css("background","#E43130")
+				}else{
+					$("header").css("background","transparent")
+				}
+			})
+		</script>
+		<!-- swiper轮播 -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="img/index/6bf9cccb239c567a.jpg_cr_1125x549_0_72_q70.jpg.jpg"></div>
+				<div class="swiper-slide"><img src="img/index/4dfdafc487019d02.jpg_cr_1125x549_0_72_q70.jpg.jpg"></div>
+				<div class="swiper-slide"><img src="img/index/86000c6c1ed4561a.jpg_cr_1125x549_0_72_q70.jpg.jpg"></div>
+				<div class="swiper-slide"><img src="img/index/5beb0fb6N70b0b6d1.jpg!cr_1125x549_0_72!q70.jpg"></div>
+				<div class="swiper-slide"><img src="img/index/ef8c3c5ef9a5f3b5.jpg_cr_1125x549_0_72_q70.jpg.jpg"></div>
+				<div class="swiper-slide"><img src="img/index/0232e3406fdafd7d.jpg!cr_1125x549_0_72!q70.jpg"></div>
+				<div class="swiper-slide"><img src="img/index/f98802fb42c42fc0.jpg!cr_1125x549_0_72!q70.jpg"></div>
+				<div class="swiper-slide"><img src="img/index/33ba81f756fb2d12.jpg!cr_1125x549_0_72!q70.jpg"></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<script type="text/javascript">
+			window.onload = function() {
+				var mySwiper = new Swiper('.swiper-container', {
+					// 轮播图的方向，也可以是vertical方向
+					direction: 'horizontal',
+					//播放速度
+					loop: true,
+					// 自动播放时间
+					autoplay:1000,
+					// 播放的速度
+					speed: 2000,
+					// 如果需要分页器，即下面的小圆点
+					pagination: '.swiper-pagination',
+					// 这样，即使我们滑动之后， 定时器也不会被清除
+					autoplayDisableOnInteraction: false,
+				});
+			}
+		</script>
+		<!-- 轮播下导航 -->
+		<div class="floor">
+			<img src="img/index/9a27281ac209aab9.jpg_q70.jpg.jpg">
+			<img src="img/index/df94ed0e9bc2769f.jpg_q70.jpg.jpg">
+			<img src="img/index/8137e5ac3a82baa6.jpg_q70.jpg.jpg">
+		</div>
+		<div class="box_wrapper">
+			<div class="bg"></div>
+			<div class="supermarket">
+				<ul class="clearfix">
+					<li>
+						<img src="img/index/3e1f03627159ad4a.png" alt="" />
+						<span>京东超市</span>
+					</li>
+					<li>
+						<img src="img/index/3a7f0c7484c51835.png" alt="" />
+						<span>海囤全球</span>
+					</li>
+					<li>
+						<img src="img/index/a0db002c6113ca38.png" alt="" />
+						<span>京东时尚</span>
+					</li>
+					<li>
+						<img src="img/index/5c2f70e76e379acf.png" alt="" />
+						<span>京东生鲜</span>
+					</li>
+					<li>
+						<img src="img/index/a71f47d5c48fb3ed.png" alt="" />
+						<span>京东到家</span>
+					</li>
+					<li>
+						<img src="img/index/2eb935f8056fd370.png" alt="" />
+						<span>充值缴费</span>
+					</li>
+					<li>
+						<img src="img/index/b2de81c2d7215e01.png" alt="" />
+						<span>9.9元拼</span>
+					</li>
+					<li>
+						<img src="img/index/7a2d093227747ca8.png" alt="" />
+						<span>领券</span>
+					</li>
+					<li>
+						<img src="img/index/a34c5ea79e9a5e8f.png" alt="" />
+						<span>赚钱</span>
+					</li>
+					<li>
+						<img src="img/index/c8d7afb6061ea1e1.png" alt="" />
+						<span>全部</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="newsflash clearfix">
+			<div class="newsflash-img">
+				<!-- <img src="img/index/kuaibao.jpg" /> -->
+			</div>
+			<div class="animate-text">
+				<ul>
+					<li>
+						<font>推荐</font>
+						<span>为什么懂手机的人都咋咋咋爱咋咋在北极狐琵琶骨</span>
+					</li>
+					<li>
+						<font>最新</font>
+						<span>史上偏宜麒麟980新机来了，比小米8更偏宜实在令人期待
+						</span>
+					</li>
+					<li>
+						<font>热门</font>
+						<span>中国车牌号被禁用的两个字母，容易跟数字混淆，没听过吧？</span>
+					</li>
+					<li>
+						<font>HOT</font>
+						<span>魅族16S首曝：首发骁龙8150+无刘海，价格香喷喷</span>
+					</li>
+				</ul>
+			</div>
+			<div class="more">
+				更多
+			</div>
+		</div>
+		<div class="day-choujiang">
+			<div class="day1">
+				<img src="img/5b4ef440N90d4cec0.jpg_q70.jpg.jpg" />
+			</div>
+			<div class="day2">
+				<img src="img/5b7d15f8N6dcc1499.jpg_q70.jpg.jpg" />
+			</div>
+			<div class="day2">
+				<img src="img/5b5941f0Ncf55eacb.jpg_q70.jpg.jpg" />
+			</div>
+
+		</div>
+		<div class="seckill">
+			<div class="seckill-header">
+				<span class="seckill-text">
+					京东秒杀
+				</span>
+				<div class="time">
+					<strong>14:00点场</strong>
+					<ul>
+						<li>00</li><span>:</span>
+						<li>31</li><span>:</span>
+						<li>20</li>
+					</ul>
+				</div>
+				<span class="more-seckill">
+					更多秒杀
+					<i class=""><img src="img/arrow_rt.png" /></i>
+				</span>
+			</div>
+			<div class="seckill-commodity">
+				<ul>
+					<li>
+						<img src="img/5a2a6d2aN557c463d.jpg_q70.jpg.jpg" />
+						<div class="text-price">
+							<span>￥1216</span><br />
+							<s>￥3299</s>
+						</div>
+					</li>
+					<li>
+						<img src="img/5a2a6d2bNb152c875.jpg_q70.jpg.jpg" />
+						<div class="text-price">
+							<span>￥7.99</span><br />
+							<s>￥12</s>
+						</div>
+					</li>
+					<li>
+						<img src="img/5a5ebdffNf1a23b7b.jpg.jpg" />
+						<div class="text-price">
+							<span>￥299</span><br />
+							<s>￥599</s>
+						</div>
+					</li>
+					<li>
+						<img src="img/5a598564N2f2fec61.jpg_q70.jpg" />
+						<div class="text-price">
+							<span>￥59.9</span><br />
+							<s>￥233</s>
+						</div>
+					</li>
+					<li>
+						<img src="img/5b023aa7Nd0b68d07.jpg_q70.jpg" />
+						<div class="text-price">
+							<span>￥19.9</span><br />
+							<s>￥120</s>
+						</div>
+					</li>
+					<li>
+						<img src="img/5b063c38N5ad400c1.jpg_q70.jpg.jpg" />
+						<div class="text-price">
+							<span>￥159</span><br />
+							<s>￥189</s>
+						</div>
+					</li>
+					<li>
+						<img src="img/5b70dfc1Nb578034f.jpg_q70.jpg" />
+						<div class="text-price">
+							<span>￥99</span><br />
+							<s>￥299</s>
+						</div>
+					</li>
+					<li>
+						<img src="img/5b90f5bfNcd58f18b.png_q70.jpg.jpg" />
+						<div class="text-price">
+							<span>￥138</span><br />
+							<s>￥487</s>
+						</div>
+					</li>
+					<li>
+						<img src="img/5a2a6d2aN557c463d.jpg_q70.jpg.jpg" />
+						<div class="text-price">
+							<span>￥1216</span><br />
+							<s>￥3299</s>
+						</div>
+					</li>
+					<li>
+						<div class="see-more">
+							<i class="jd-sprites"></i>
+							<span>查看更多</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="yard">
+			<div class="title-img">
+				<i class="title-c-img">
+					<img src="img/5b7a6fa1N94e7f9d9.jpg_q70.jpg.jpg" />
+				</i>
+			</div>
+			<div class="yard-show clearfix">
+				<div class="yard-show1">
+					<div class="yard-text">
+						<span>
+							——洞房花烛——
+						</span>
+						<p>
+							我们今天结婚了
+						</p>
+					</div>
+					<ul>
+						<li>
+							<img src="img/5bee670dNda815607.jpg.jpg" />
+						</li>
+						<li>
+							<img src="img/5bf2c2daNc6abf0bc.jpg.jpg" />
+						</li>
+					</ul>
+				</div>
+				<div class="yard-show1">
+					<div class="yard-text">
+						<span>
+							——温暖用车——
+						</span>
+						<p>
+							冬季用车不俱严寒
+						</p>
+					</div>
+					<ul>
+						<li>
+							<img src="img/5ad9f51dN5dada1a5.jpg_q70.jpg" />
+						</li>
+						<li>
+							<img src="img/5b554ab6N7a44ee96.jpg_q70.jpg" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="fashion clearfix">
+				<li>
+					<span>时尚耐用</span>
+					<p>踏足绿茵场</p>
+					<img src="img/5ab2ff90N30de3950.jpg_q70.jpg" />
+				</li>
+				<li>
+					<span>百变女王</span>
+					<p>女神范</p>
+					<img src="img/5b8747caN2c41addf.jpg_q70.jpg.jpg" />
+				</li>
+				<li>
+					<span>有矿家庭</span>
+					<p>钱多有矿</p>
+					<img src="img/5b063c38N5ad400c1.jpg_q70.jpg.jpg" />
+				</li>
+				<li>
+					<span>糕点糖巧</span>
+					<p>甜蜜浪漫</p>
+					<img src="img/54163e2cNd46e2885.jpg_q70.jpg" />
+				</li>
+			</ul>
+		</div>
+		<div class="day-shopping">
+			<div class="title-img">
+				<img src="img/5b0fecc7N541bb0dd.png_q70.jpg.jpg" />
+			</div>
+			<ul class="day-shopping-img clearfix">
+				<li>
+					<strong>优享免息</strong>
+					<p>分期免息费</p>
+					<img src="img/d15108c4322a33c2.jpg_q70.jpg.jpg" />
+				</li>
+				<li>
+					<strong>品牌秒杀</strong>
+					<p>低价抢大牌</p>
+					<img src="img/56283e28N7854c59b.jpg_q70.jpg" />
+				</li>
+				<li>
+					<strong>闪购</strong>
+					<p>精选一元购</p>
+					<img src="img/5bf51166Ne6062a8d.jpg_q70.jpg" />
+				</li>
+				<li>
+					<strong>拍拍二手</strong>
+					<p>iPhone 5折起</p>
+					<img src="img/5bfbbaa4N3f8dea44.jpg_q70.jpg" />
+				</li>
+				<li>
+					<strong>排行榜</strong>
+					<p>专属购物指南</p>
+					<img src="img/5a2a6d55N83655f7f.jpg_q70.jpg.jpg" />
+				</li>
+				<li>
+					<strong>发现好货</strong>
+					<p>高品质生活</p>
+					<img src="img/5b87bf15N9409ba0e.png_q70.jpg.jpg" />
+				</li>
+				<li>
+					<strong>会买专辑</strong>
+					<p>好物大集合</p>
+					<img src="img/5b063c38N5ad400c1.jpg_q70.jpg.jpg" />
+				</li>
+				<li>
+					<strong>新品首发</strong>
+					<p>玛莎拉蒂</p>
+					<img src="img/5b6264dbN0a9ed3a7.jpg_q70.jpg.jpg" />
+				</li>
+			</ul>
+		</div>
+		<div class="lovelife yard">
+			<div class="title-img">
+				<img src="img/5aa0dbc1Nefd2bd2a.png_q70.jpg.jpg" />
+			</div>
+			<div class="yard-show clearfix">
+				<div class="yard-show1">
+					<div class="yard-text">
+						<span>
+							玩3C
+						</span>
+						<p>
+							玩转3c科技
+						</p>
+					</div>
+					<ul>
+						<li>
+							<img src="img/5bee670dNda815607.jpg.jpg" />
+						</li>
+						<li>
+							<img src="img/5b2a528eN7c6bde83.jpg_q70.jpg.jpg" />
+						</li>
+					</ul>
+				</div>
+				<div class="yard-show1">
+					<div class="yard-text">
+						<span>
+							京东家电
+						</span>
+						<p>
+							家电狂欢，精彩有你
+						</p>
+					</div>
+					<ul>
+						<li>
+							<img src="img/5b84f11bN28dfca8f.jpg.jpg" />
+						</li>
+						<li>
+							<img src="img/5bb76d0cNe70f958b.jpg_q70.jpg.jpg" />
+						</li>
+					</ul>
+				</div>
+				<div class="yard-show1">
+					<div class="yard-text">
+						<span>
+							京东超市
+						</span>
+						<p>
+							超市好货特价抢
+						</p>
+					</div>
+					<ul>
+						<li>
+							<img src="img/5b70fdb3N826e3e1b.jpg_q70.jpg" />
+						</li>
+						<li>
+							<img src="img/5b063c38N5ad400c1.jpg_q70.jpg.jpg" />
+						</li>
+					</ul>
+				</div>
+				<div class="yard-show1">
+					<div class="yard-text">
+						<span>
+							爱家
+						</span>
+						<p>
+							家居用品，部分满199 减100
+						</p>
+					</div>
+					<ul>
+						<li>
+							<img src="img/5b8747caN2c41addf.jpg_q70.jpg.jpg" />
+						</li>
+						<li>
+							<img src="img/5a94c92eN0b846cd0.jpg_q70.jpg" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="fashion clearfix">
+				<li>
+					<span>家有萌宝</span>
+					<p>地址五折</p>
+					<img src="img/eeb34950512bdada.jpg_q70.jpg" />
+				</li>
+				<li>
+					<span>个户馆</span>
+					<p>9.9元拼购</p>
+					<img src="img/5ab8c410N112177fa.jpg_q70.jpg" />
+				</li>
+				<li>
+					<span>爱吃</span>
+					<p>9.9包邮</p>
+					<img src="img/5b7a59ebNc4e380b2.jpg_q70.jpg" />
+				</li>
+				<li>
+					<span>时尚衣橱</span>
+					<p>夏日也生动</p>
+					<img src="img/5b5ad29eN48e290c3.jpg_q70.jpg" />
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="market">
+			<div class="title-img">
+				<img src="img/5aa23f27Nfa6d6be3.png_q70.jpg.jpg" />
+			</div>
+			<div class="market-show clearfix">
+				<ul>
+					<li>
+						<div class="market-text">
+							<span>美食街</span>
+							<p>低至五折</p>
+						</div>
+						<img src="img/5bf29a6cN7f8319c9.jpg_q70.jpg" />
+					</li>
+					<li>
+						<div class="market-text">
+							<span>母婴馆</span>
+							<p>超值拼团</p>
+						</div>
+						<img src="img/5bc55809N1ee72e9f.jpg_q70.jpg" />
+					</li>
+					<li>
+						<div class="market-text">
+							<span>生鲜馆</span>
+							<p>尝鲜秒杀</p>
+						</div>
+						<img src="img/5b768ec7N8b29a869.jpg_q70.jpg" />
+					</li>
+					<li>
+						<div class="market-text">
+							<span>大家电器</span>
+							<p>满千减百</p>
+						</div>
+						<img src="img/5b2a528eN7c6bde83.jpg_q70.jpg.jpg" />
+					</li>
+				</ul>
+			</div>
+			<ul class="market2 clearfix">
+				<li>
+					<span>进口馆</span>
+					<p>满199减100</p>
+					<img src="img/5a091d03N54e77227.jpg_q70.jpg" />
+				</li>
+				<li>
+					<span>手机馆</span>
+					<p>享白条免息</p>
+					<img src="img/5b90f5bfNcd58f18b.png_q70.jpg.jpg" />
+				</li>
+				<li>
+					<span>小家电馆</span>
+					<p>满减狂欢</p>
+					<img src="img/5b87d500N62f23cdb.jpg_q70.jpg" />
+				</li>
+				<li>
+					<span>美妆馆</span>
+					<p>领免费试用</p>
+					<img src="img/598033beN59973534.jpg_q70.jpg" />
+				</li>
+				<li>
+					<span>内衣馆</span>
+					<p>年终狂欢购</p>
+					<img src="img/5bf2c2daNc6abf0bc.jpg.jpg" />
+				</li>
+				<li>
+					<span>医药城</span>
+					<p>大牌直降</p>
+					<img src="img/5a94c92eN0b846cd0.jpg_q70.jpg" />
+				</li>
+				<li>
+					<span>鞋靴箱包</span>
+					<p>低至五折</p>
+					<img src="img/5bf26a4cNe548feb2.jpg.jpg" />
+				</li>
+				<li>
+					<span>电脑办公</span>
+					<p>新品好价购</p>
+					<img src="img/5b87bf15N9409ba0e.png_q70.jpg.jpg" />
+				</li>
+			</ul>
+		</div>
+		<div class="foot1">
+			<div class="icon1">
+				<div class="icon-center">
+					<img src="img/index/5aa10cd2N46f18ce6.png" >
+				</div>
+			</div>
+			<div class="icon1" onclick="location.href='fenlei.html'" >
+				<div class="icon-center">
+					<img src="img/index/5aa10cdbNa9cd0320.png" >
+				</div>
+			</div>
+			<div class="icon1" onclick="location.href='pingou.html'">
+				<div class="icon-center">
+					<img src="img/index/5b8e4ac3N749fb56e.png" >
+				</div>
+			</div>
+			<div class="icon1" onclick="location.href='shop.html'">
+				<div class="icon-center">
+					<img src="img/index/5aa10ceaN649eec12.png" >
+				</div>
+			</div>
+			<div class="icon1" onclick="location.href='login.html'">
+				<div class="icon-center">
+					<img src="img/index/5af43af1N04ef5a16.png" >
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
